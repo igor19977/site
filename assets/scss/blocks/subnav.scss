@@ -1,0 +1,52 @@
+.subnav {
+    display: none;
+    
+    width: 20.5rem;
+    padding: 1rem 0;
+    
+    background-color: #4169E1;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 8px rgba($black, .2);
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    @include breakpoint($tablet-br) {
+        position: static;
+        width: 100%;
+        padding-left: 1rem;
+        
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.subnav__link {
+    display: block;
+    padding: .45rem;
+    
+    font-size: 1.4rem;
+    color: #E0FFFF;
+    font-family: Palatino Linotype;
+    text-decoration: none;
+    
+    transition: background-color .2s ease-in-out;
+    
+    &:hover {
+        background-color: darken($blue, 25%);
+        text-decoration: none;
+    }
+    
+    @include breakpoint($tablet-br) {
+        padding-left: 0;
+        padding-right: 0;
+        
+        font-size: 1.5rem;
+        
+        &:hover {
+            background: none;
+        }
+    }
+    
+}

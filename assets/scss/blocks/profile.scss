@@ -1,0 +1,84 @@
+.profile {
+    margin-top: -5rem;
+    
+    @include breakpoint ($tablet-br) {
+        margin-top: -1rem;
+        position: relative;
+        
+        border-bottom: 1px solid $white;
+    }
+}
+
+.profile__avatar {
+    display: block;
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto 2rem;
+    position: relative;
+    
+    @include breakpoint ($tablet-br) {
+        width: 6.5rem;
+        height: 6.5rem;
+        
+        margin-left: 0;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.profile__header {
+    margin-bottom: 2rem;
+    
+    text-align: center;
+    
+    @include breakpoint ($tablet-br) {
+        padding-top: 2rem;
+        padding-left: 8rem;
+        text-align: left;
+    }
+}
+
+.profile__name {
+    font-size: 1.9rem;
+    font-family: Palatino Linotype;
+    color: #FFFFE0;
+    
+    @include breakpoint ($tablet-br) {
+        font-size: 1.9rem;
+    }
+}
+
+.profile__prof{
+    font-size: 1.9rem;
+    font-weight: 300;
+    font-family: Palatino Linotype;
+    color: #FFFFE0;
+    
+    @include breakpoint ($tablet-br) {
+        font-size: 1.2rem;
+    }
+}
+
+.profile__text {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Palatino Linotype;
+    color: #FFFFE0;
+    
+    
+    @include breakpoint ($tablet-br) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

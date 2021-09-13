@@ -1,0 +1,63 @@
+.sidebar-2 {
+    width: $sidebar-width-2;
+    height: 100vh;
+    
+    background-color: none;
+  
+    
+    position: fixed;
+    top: 55px;
+    left: 1230px;
+    z-index: $z-index-sidebar;
+    
+    @include breakpoint ($tablet-br) {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 4rem);
+        padding-bottom: 10rem;
+        overflow: auto;
+        
+        top: 4rem;
+        
+        transform: translateX(-100%);
+        transition: transform .2s linear;
+        
+        .show-sidebar & {
+            transform: translateX(0%);
+        }
+    }
+}
+
+.sidebar-2__header {
+    height: 18rem;
+    background-color: $white;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    @include breakpoint ($tablet-br) {
+        height: 10rem;
+    }
+}
+
+.sidebar-2__content {
+    padding: 5rem 0rem 0rem 0.3rem;
+    
+    @include breakpoint ($tablet-br) {
+        flex-grow: 1;
+    }
+}
+
+.sidebar-2__footer {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 4rem;
+}
+
+.sidebar-2__image {
+    padding: 1rem 5rem 1rem 14rem;
+}
